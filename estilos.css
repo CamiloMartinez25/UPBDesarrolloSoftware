@@ -28,14 +28,16 @@ body {
     flex-direction: column;
 }
 
-.logo-container > h1 {
+.logotext-container > h1 {
     font-size: 100px;
+    text-align: center;
 }
 
-.logo-container > p {
+.logotext-container > p {
     font-size: 28px;
     color: green;
     opacity: 0.8;
+    text-align: center;
 }
 
 
@@ -141,16 +143,107 @@ hr {
     margin-top: 0;
 }
 
-
-@media (max-width: 450px) {
+@media (max-width: 324px) {
     .logo-container {
         width: 100%;
     }
 
     .register-container {
-        top: 50%;
+        top: 45%;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: 90%;
+        width: 80%;
+    }
+
+    .login-container {
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+    }
+
+    .logotext-container > h1 {
+        font-size: 60px;
+    }
+
+    .logotext-container > p {
+        font-size: 10px;
+        color: green;
+        opacity: 0.8;
+        text-align: center;
+    }
+
+    .logotext-container {
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+
+@media (min-width: 325px) and (max-width: 450px) {
+    .logo-container {
+        width: 100%;
+    }
+
+    .register-container {
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+    }
+
+    .login-container {
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+    }
+
+    .logotext-container > h1 {
+        font-size: 70px;
+    }
+
+    .logotext-container > p {
+        font-size: 15px;
+        color: green;
+        opacity: 0.8;
+        text-align: center;
+    }
+
+    .logotext-container {
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+@media (min-width: 451px) and (max-width: 850px) {
+    .logo-container {
+        width: 50%;
+    }
+
+    .register-container {
+        top: 50%;
+        left: 74%;
+        transform: translate(-50%, -50%);
+        width: 350px;
+    }
+
+    .login-container {
+        top: 50%;
+        left: 74%;
+        transform: translate(-50%, -50%);
+        width: 350px;
+    }
+
+    .logotext-container > h1 {
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .logotext-container > p {
+        font-size: 15px;
+        color: green;
+        opacity: 0.8;
+        text-align: center;
     }
 }
