@@ -105,8 +105,8 @@ select.input {
     border-radius: 7px;
     width: 350px;
     min-height: 400px;
-    box-shadow: 0 0 3px #ced77c;
-    border: none;
+    box-shadow: 0 0 5px black;
+    border: 1px solid;
 }
 
 
@@ -120,8 +120,8 @@ select.input {
     border-radius: 7px;
     width: 350px;
     min-height: 300px;
-    box-shadow: 0 0 3px #ced77c;
-    border: none;
+    box-shadow: 0 0 5px black;
+    border: 1px solid;
 }
 
 .register-title {
