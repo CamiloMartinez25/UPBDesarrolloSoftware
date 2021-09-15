@@ -9,22 +9,26 @@
 </head>
 <body>
     <form action="" id="form-registro" method="POST">
-        <ul>
-            <li>
-                <label for="username">Username</label>
-                <input type="text" name="username" id="username">
-            </li>
-            <li>
-                <label for="contrasena">Contraseña</label>
-                <input type="text" name="contrasena" id="contrasena">
-            </li>
-            <li>
-                
-            </li>
-        </ul>
-        
-
-        
+      <div class="input-container">
+        <input class="input" id="username" name="username" placeholder="Nombre de usuario">
+        <label class="input-label" for="username" >Username</label>
+      </div>
+      <div class="input-container">
+        <input class="input" type="password" name="contrasena" id="contrasena">
+        <label class="input-label" for="contrasena">Contraseña</label>
+      </div>
+      //TODO preguntas de seguridad
+      <div class="input-container">
+        <select class="input" name="nameSelect" id="idSelect" placeholder=" ">
+            <option value="unValor">Pregunta</option>
+        </select>
+        <label class="input-label" for="idSelect" >Label</label>
+      </div>
+      //TODO respuestas de seguridad
+      <div class="input-container">
+        <input class="input" id="idInput" name="nombreInput" placeholder=" ">
+        <label class="input-label" for="idInput" >Label</label>
+      </div>
     </form>
 </body>
 </html>
