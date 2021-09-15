@@ -18,7 +18,28 @@
         <h5 class="register-subtitle">Datos por persona</h5>
         <div class="form-container">
             <!-- Aqui debe ir el formulario -->
-            
+            <form action="" id="form-registro" method="POST">
+                <div class="input-container">
+                  <input class="input" id="username" name="username" placeholder="Nombre de usuario">
+                  <label class="input-label" for="username" >Username</label>
+                </div>
+                <div class="input-container">
+                  <input class="input" type="password" name="contrasena" id="contrasena">
+                  <label class="input-label" for="contrasena">Contraseña</label>
+                </div>
+                //TODO preguntas de seguridad
+                <div class="input-container">
+                  <select class="input" name="nameSelect" id="idSelect" placeholder=" ">
+                      <option value="unValor">Pregunta</option>
+                  </select>
+                  <label class="input-label" for="idSelect" >Label</label>
+                </div>
+                //TODO respuestas de seguridad
+                <div class="input-container">
+                  <input class="input" id="idInput" name="nombreInput" placeholder=" ">
+                  <label class="input-label" for="idInput" >Label</label>
+                </div>
+            </form>
             <!-- Aqui debe ir el boton -->
 
             <!-- Aqui debe ir el link de redirección -->
@@ -26,5 +47,6 @@
         </div>
 
     </div>
+    
 </body>
 </html>
