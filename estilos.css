@@ -1,31 +1,59 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: 100vh;
+}
 
-
-
-
-
-
-
+.logo-container {
+    background-image: url('./background.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 100vh;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 0;
+}
 
 /* Estilos del input */
 
 .input-container {
     display: flex;
     flex-direction: column;
-    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo-container > h1 {
+    font-size: 100px;
+}
+
+.logo-container > p {
+    font-size: 28px;
+    color: green;
+    opacity: 0.8;
 }
 
 
 
 .input {
     height: 40px;
-    border: 0.5px solid lightgray;
-    border-radius: 5px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0.5px solid lightgray;
+    border-radius: 4px 4px 0 0;
     text-align: right;
     padding: 0 0.5rem;
 }
 
 .input:hover , .input:focus , .input:active {
-    box-shadow: 0 0 3px rgb(8, 48, 8);
+    border-bottom: 2px solid;
+    background-color: oldlace;
     outline: none;
 }
 
@@ -39,27 +67,26 @@
 .input:hover ~ .input-label, .input:focus ~ .input-label, .input:active ~ .input-label, .input:not(:placeholder-shown) ~ .input-label {
     top: -2.2rem;
     left: 0.5rem;
-    color: green;
 }
 
 .button {
     padding: 0.8rem;
-    min-width: 100px;
+    font-weight: bold;
     border-radius: 5px;
+    width: 100%;
     border: 0;
-    background-color: lightgreen;
+    background-color: #f6f4df ;
 }
 
 .button:hover {
-    background-color: green;
-    color: white;
+    background-color: #ced77c;
     box-shadow: 0 0 3px black;
     cursor: pointer;
     opacity: 0.8;
 }
 
 .button:active {
-    box-shadow: inset 0 0 15px lightgreen;
+    box-shadow: inset 0 0 15px white;
 }
 
 select.input {
@@ -67,5 +94,64 @@ select.input {
 }
 
 
+/* Estilos contenedor de form */
+
+.register-container {
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255,255,255,0.8);
+    padding: 1rem;
+    border-radius: 7px;
+    width: 350px;
+    min-height: 400px;
+    box-shadow: 0 0 3px #ced77c;
+    border: none;
+}
 
 
+.login-container {
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255,255,255,0.8);
+    padding: 1rem;
+    border-radius: 7px;
+    width: 350px;
+    min-height: 300px;
+    box-shadow: 0 0 3px #ced77c;
+    border: none;
+}
+
+.register-title {
+    text-align: center;
+}
+
+.register-subtitle {
+    margin: 1rem 0 0.5rem 0;
+}
+
+.form-container {
+    padding-top: 0.7rem;
+    border-top: 5px solid;
+}
+
+hr {
+    margin-top: 0;
+}
+
+
+@media (max-width: 450px) {
+    .logo-container {
+        width: 100%;
+    }
+
+    .register-container {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+    }
+}
