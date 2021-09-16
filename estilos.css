@@ -55,7 +55,7 @@ body {
 
 .input:hover , .input:focus , .input:active {
     border-bottom: 2px solid;
-    background-color: oldlace;
+    background-color: #f0e091;
     outline: none;
 }
 
@@ -76,14 +76,13 @@ body {
     border-radius: 5px;
     width: 100%;
     border: 0;
-    background-color: #f6f4df ;
+    background-color: #f0e091 ;
 }
 
 .button:hover {
-    background-color: #ced77c;
+    background-color: #badb41;
     box-shadow: 0 0 3px black;
     cursor: pointer;
-    opacity: 0.8;
 }
 
 .button:active {
