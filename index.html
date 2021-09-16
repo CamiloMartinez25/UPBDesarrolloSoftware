@@ -29,17 +29,20 @@
                   <input class="input" type="password" name="contrasena" id="contrasena" placeholder="Contraseña">
                   <label class="input-label" for="contrasena">Password</label>
                 </div>
-                <!-- TODO preguntas de seguridad -->
                 <div class="input-container">
-                  <select class="input" name="nameSelect" id="idSelect" placeholder=" ">
-                      <option value="unValor">Pregunta</option>
+                  <select class="input" name="preguntas-seguridad" id="preguntas-seguridad" placeholder="Escoja una pregunta...">
+                      <option selected disabled value="undefined">Escoja una pregunta de seguridad</option>
+                      <option value="Madre">¿Cuál es el apellido de soltera de su madre?</option>
+                      <option value="Aniversario">¿En qué año se casaron sus padres?</option>
+                      <option value="Telefono">¿Cual fue su primer número de teléfono?</option>
+                      <option value="Profesora">¿Cual era el nombre de su primera profesora?</option>
+                      <option value="Carro">¿Cual era el modelo de su primer carro?</option>
                   </select>
-                  <label class="input-label" for="idSelect" >Label</label>
+                  <label class="input-label" for="preguntas-seguridad" ></label>
                 </div>
-                <!-- TODO respuestas de seguridad -->
                 <div class="input-container">
-                  <input class="input" id="idInput" name="nombreInput" placeholder=" ">
-                  <label class="input-label" for="idInput" >Label</label>
+                  <input class="input" id="respuesta-seguridad" name="respuesta-seguridad" placeholder="Escribe una respuesta corta...">
+                  <label class="input-label" for="respuesta-seguridad" >Escribe tu respuesta</label>
                 </div>
             </form>
             <!-- Aqui debe ir el boton -->
