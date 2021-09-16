@@ -18,7 +18,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    line-height: 0;
+    line-height: 0;    
+    padding: 0rem 2rem;
 }
 
 /* Estilos del input */
@@ -174,6 +175,7 @@ hr {
 @media (max-width: 324px) {
     .logo-container {
         width: 100%;
+        padding: 0;
     }
 
     .register-container {
@@ -211,6 +213,7 @@ hr {
 @media (min-width: 325px) and (max-width: 450px) {
     .logo-container {
         width: 100%;
+        padding: 0;
     }
 
     .register-container {
@@ -247,6 +250,7 @@ hr {
 @media (min-width: 451px) and (max-width: 850px) {
     .logo-container {
         width: 50%;
+        padding: 0;
     }
 
     .register-container {
