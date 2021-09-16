@@ -156,6 +156,10 @@ hr {
     text-shadow: 1px 1px 4px;
 }
 
+.hidden {
+    visibility: hidden;
+}
+
 @media (max-width: 324px) {
     .logo-container {
         width: 100%;
