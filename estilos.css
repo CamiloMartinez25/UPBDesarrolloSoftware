@@ -142,35 +142,6 @@ hr {
     margin-top: 0;
 }
 
-/* Estilos botón form */
-.btn-registrar{
-    position: absolute;
-    border-radius: 5px;
-    width: 140px;
-    min-height: 35px;
-    box-shadow: 0 0 5px black;
-    border: 1px solid;
-    font-weight: bold;
-}
-
-.btn-registrar:hover {
-    background-color: #ced77c;
-    box-shadow: 0 0 3px black;
-    cursor: pointer;
-    opacity: 0.8;
-}
-
-.btn-registrar:active {
-    box-shadow: inset 0 0 15px white;
-}
-
-.button-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-/* Fin estilos botón form */
-
 @media (max-width: 324px) {
     .logo-container {
         width: 100%;
