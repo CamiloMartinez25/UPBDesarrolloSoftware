@@ -143,6 +143,20 @@ hr {
     margin-top: 0;
 }
 
+.link-login {
+    text-decoration: none;
+    color: inherit;
+    font-size: 0.8rem;
+    font-weight: bold;
+    float: right;
+    margin-top: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.link-login:hover {
+    text-shadow: 1px 1px 4px;
+}
+
 @media (max-width: 324px) {
     .logo-container {
         width: 100%;
