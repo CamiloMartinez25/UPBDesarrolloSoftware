@@ -8,7 +8,7 @@ function checkUsername(valor){
 
       
        if (regxp.test(campoUsername.value)==true){
-           document.getElementById("btn-registrar").focus();
+           document.getElementById("contrasena").focus();
            alert("Campo username: Correcto")
            return true;
        }else{
