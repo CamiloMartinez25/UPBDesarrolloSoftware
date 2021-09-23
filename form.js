@@ -1,10 +1,13 @@
 //VALIDACIÓN NOMBRE DE USUARIO
 
 function checkUsername(valor){
-    if(username.value != ""){
+    let campoUsername = document.getElementById("username");
+     let regxp = /^([a-zA-Z0-9]){1,30}$/;
 
-       let regxp = /^([a-zA-Z0-9]){1,30}$/;
-       if (regxp.test(username.value)==true){
+    if(campoUsername.value != ""){
+
+      
+       if (regxp.test(campoUsername.value)==true){
            document.getElementById("btn-registrar").focus();
            alert("Campo username: Correcto")
            return true;
