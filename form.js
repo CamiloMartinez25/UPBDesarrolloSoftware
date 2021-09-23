@@ -1,6 +1,24 @@
 //VALIDACIÓN NOMBRE DE USUARIO
 
 function checkUsername(valor){
+    if(username.value != ""){
+
+       let regxp = /^([a-zA-Z0-9]){1,30}$/;
+       if (regxp.test(username.value)==true){
+           document.getElementById("btn-registrar").focus();
+           alert("Campo username: Correcto")
+           return true;
+       }else{
+           alert("El Campo username debe contener máximo 30 caracteres y usar sólo letras o números");
+           document.getElementById("username").focus();
+           return false;
+       }
+   }else{
+       alert("El campo username no puede estar vacío")
+       document.getElementById("username").focus();
+       return false;
+
+   }
 
 }
 //module.exports = checkUsername;
