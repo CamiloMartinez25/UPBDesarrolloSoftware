@@ -10,7 +10,15 @@ function checkUsername(valor){
 //VALIDACIÓN CONTRASEÑA
 
 function checkContrasena(valor){
-    
+    var passregex= /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.{8,})$/
+    if (valor.match(passregex)) {
+        alert("Válida")
+        return true;
+    }
+    else {
+        alert("No es válida")
+        return false;
+    }
 }
 //module.exports = checkContrasena;
 
