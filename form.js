@@ -60,8 +60,18 @@ function checkContrasena(valor) {
 
 //VALIDACIÓN PREGUNTA SEGURIDAD
 
-//VALIDACIÓN CAMPO RESPUESTA DE SEGURIDAD
+function checkPreguntaSeg(valor){
+  let campoPregunta = document.getElementById("preguntas-seguridad");
+  const preguntaSegError = document.querySelector("#preguntaSeguridadError");
 
+  if(campoPregunta.value == ''){
+    preguntaSegError.textContent = "El campo pregunta de seguridad debe tener alguna selección.";
+    document.getElementById("preguntas-seguridad").focus();
+    return false;
+  }
+}
+
+//VALIDACIÓN CAMPO RESPUESTA DE SEGURIDAD
 
 function checkRespuestaSeg(valor) {
   //let campoRespuesta = document.getElementById("respuesta-seguridad");  No se debe llamar el campo solo recibir el parametro a evaluar
