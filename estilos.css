@@ -41,7 +41,9 @@ body {
     text-align: center;
 }
 
-
+.form {
+    margin-bottom: 1rem;
+}
 
 .input {
     height: 40px;
@@ -69,6 +71,12 @@ body {
 
 .input:hover ~ .input-label, .input:focus ~ .input-label, .input:active ~ .input-label, .input:not(:placeholder-shown) ~ .input-label {
     top: -2.2rem;
+}
+
+.input-error {
+    font-size: 10px;
+    margin-top: -10px;
+    color: #f31a1a;
 }
 
 .button {
