@@ -13,7 +13,7 @@ contrasenaInput.addEventListener('input', () => {
 })
 
 preguntaSeguridadInput.addEventListener('input', () => {
-    checkpreguntaSeguridad(preguntaSeguridadInput.value);
+    checkPreguntaSeg(preguntaSeguridadInput.value);
 })
 
 respuestaSeguridadInput.addEventListener('input', () => {
