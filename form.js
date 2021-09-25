@@ -27,7 +27,7 @@ function checkUsername(valor) {
 //VALIDACIÓN CONTRASEÑA
 
 function checkContrasena(valor) {
-  const passregex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.{8,})$/;
+  const passregex = /(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.{8,})/;
   const contrasenaError = document.querySelector("#contrasenaError");
 
   if (!valor) {
@@ -38,14 +38,7 @@ function checkContrasena(valor) {
 
   contrasenaError.textContent = valor.match(passregex) ? "" : "La contraseña debe contener almenos una letra mayúscula, una minúscula, un número y con una longitud mayor o igual a 8 dígitos"
 
-  if (valor.match(passregex)) {
-    return true;
-  } else {
-    return false;
-  }
-
-  //refactorización del codigo
-  //return valor.match(passregex);
+  return valor.match(passregex);
 }
 
 //VALIDACIÓN PREGUNTA SEGURIDAD
@@ -65,7 +58,7 @@ function checkPreguntaSeg(valor){
 //VALIDACIÓN CAMPO RESPUESTA DE SEGURIDAD
 
 function checkRespuestaSeg(valor) {
-  //let campoRespuesta = document.getElementById("respuesta-seguridad");  No se debe llamar el campo solo recibir el parametro a evaluar
+  
   let regxp = /^([a-zA-Z0-9]){1,30}$/;
   const respuestaSeguridadError = document.querySelector("#respuestaSeguridadError");
 
