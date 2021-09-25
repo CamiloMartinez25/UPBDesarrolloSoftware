@@ -1,11 +1,9 @@
 //VALIDACIÓN NOMBRE DE USUARIO
 
 function checkUsername(valor) {
-  //let campoUsername = document.getElementById("username"); no se debe llamar al campo porque ya estas recibiendo el valor
+ 
   let regxp = /^([a-zA-Z0-9]){1,30}$/;
   const usernameError = document.querySelector("#usernameError");
-
-  //if(campoUsername.value != ""){ Debe validarse el valor que se recibe y no el obtenido del campo directamente
 
   if (valor) {
     if (regxp.test(valor) == true) {
@@ -23,15 +21,7 @@ function checkUsername(valor) {
     return false;
   }
 
-  //Aqui dejo el codigo refactorizado para que lo analices
-  /* if (!valor) {
-    usernameError.textContent = "El campo username no puede estar vacío.";
-    document.getElementById("username").focus();
-    return false;
-  }
-
-  usernameError.textContent = regxp.test(valor) ? "" : "El Campo username debe contener máximo 30 caracteres y usar sólo letras o números";
-  return regxp.test(valor); */
+ 
 }
 
 //VALIDACIÓN CONTRASEÑA
