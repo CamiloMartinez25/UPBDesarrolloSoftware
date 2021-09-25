@@ -44,11 +44,9 @@ function checkContrasena(valor) {
 //VALIDACIÓN PREGUNTA SEGURIDAD
 
 function checkPreguntaSeg(valor){
-  //let campoPregunta = document.getElementById("preguntas-seguridad"); se recibe el valor no se obtiene directamente del campo
   const preguntaSegError = document.querySelector("#preguntaSeguridadError");
-
-  //if(campoPregunta.value == ''){ se debe evaluar es el valor que se recibe 
-  if (!valor) {
+ 
+  if (campoPregunta.value == '') {
     preguntaSegError.textContent = "El campo pregunta de seguridad debe tener alguna selección.";
     document.getElementById("preguntas-seguridad").focus();
     return false;
