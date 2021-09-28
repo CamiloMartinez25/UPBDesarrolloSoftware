@@ -21,7 +21,7 @@ function obtenerUsername(arreglo) {
 //FILTRADO DE REGISTROS
 
 function filtrarUsername(arreglo) {
-      return arreglo.filter(function (registro) {return registro.Username.length > 10 })
+      return arreglo.filter(function (registro) {return registro.username.length > 10 })
 }
 
 
