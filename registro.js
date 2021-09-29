@@ -29,8 +29,16 @@ function ordenarArreglo(arreglo) {
 
 //OBTENER REGISTROS CON NÚMEROS
 
+let numbers = "0123456789";
+
 function obtenerUsername(arreglo) {
-    
+    for (var i = 0; i < arreglo.length; i++) {
+        if(numbers.indexOf(arreglo.username.charAt(i),0)!=-1){
+            console.log(arreglo.username[i]);
+            return 1;
+        }
+    }
+    return 0;
 }
 
 
