@@ -32,11 +32,10 @@ var arreglo = [
 ];
 
 function filtrarUsername(arreglo) {
-  return arreglo.filter(function (registro) {return registro.username.length > 10 })
-    
+    var salida = arreglo.filter(registro => registro.username.length > 10 ); 
+    console.log(salida);
+      return salida;
 }
-console.log(arreglo);
 
-console.log(filtrarUsername(arreglo));
-
+filtrarUsername(arreglo);
 
