@@ -29,6 +29,10 @@ body {
     flex-direction: column;
 }
 
+#form-registro > .input-container:last-of-type {
+    margin-bottom: 1rem;
+}
+
 .logotext-container > h1 {
     font-size: 100px;
     text-align: center;
@@ -166,6 +170,18 @@ hr {
 
 .hidden {
     visibility: hidden;
+}
+
+.user-success {
+    clear: both;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 5px;
+    border: 0;
+    background-color: #9aea3b;
+    font-weight: bold;
+    margin-top: 2rem;
+    display: none;
 }
 
 @media (max-width: 324px) {

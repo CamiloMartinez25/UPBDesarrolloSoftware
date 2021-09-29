@@ -5,17 +5,14 @@ var arreglo = [];
 
 function agregarRegistro() {
     
-    let nuevoRegistro = {
-
+    const nuevoRegistro = {
         username: document.getElementById('username').value,
         contrasena: document.getElementById('contrasena').value,
         preguntaSeguridad: document.getElementById('preguntas-seguridad').value,
         respuestaSeguridad: document.getElementById('respuesta-seguridad').value
     }
-   
+    console.log(nuevoRegistro);
     arreglo.push(nuevoRegistro);
-    //console.log(arreglo);
-    
 }
 
 
@@ -23,10 +20,10 @@ function agregarRegistro() {
 
 function ordenarArreglo(arreglo) {
     return  arreglo.sort((a, b) =>{
-            if(a.username <b.username) return -1;
-            if(a.username >b.username) return  1;
-            return 0;
-  })
+        if(a.username <b.username) return -1;
+        if(a.username >b.username) return  1;
+        return 0;
+    })
 }
 
 
@@ -51,4 +48,4 @@ module.exports = {
     ordenarArreglo,
     obtenerUsername,
     filtrarUsername
-  };
+};

@@ -20,7 +20,7 @@
         <h5 class="register-subtitle">Datos por usuario</h5>
         <div class="form-container">
             <!-- Aqui debe ir el formulario -->
-            <form action="" class="form" id="form-registro" method="POST">
+            <form class="form" id="form-registro" method="POST">
                 <div class="input-container">
                   <input class="input" id="username" name="username" placeholder="Nombre de usuario">
                   <label class="input-label" for="username" >Username</label>
@@ -48,16 +48,19 @@
                   <label class="input-label hidden" for="respuesta-seguridad" >Escribe tu respuesta</label>
                   <span class="input-error" id="respuestaSeguridadError"></span>
                 </div>
+
+                <!-- Aqui debe ir el boton -->
+                <button class="button" type="submit" id="btn-registrar"  >Registrar</button>
+                <!-- Aqui debe ir el link de redirección -->
+                <a class="link-login" href="login.html" id="enlace-login">Iniciar sesión*</a>
             </form>
-            <!-- Aqui debe ir el boton -->
-            <button class="button" type="submit" id="btn-registrar" onclick="alert('Funciona')" >Registrar</button>
-            <!-- Aqui debe ir el link de redirección -->
-            <a class="link-login" href="login.html" id="enlace-login">Iniciar sesión*</a>
-
         </div>
-
+        <div class="user-success" id="user-register" >
+          ¡Usuario registrado con exito!
+        </div>
     </div>
     <script src="./form.js" ></script>
+    <script src="./registro.js" ></script>
     <script src="./index.js" ></script>
 </body>
 </html>
