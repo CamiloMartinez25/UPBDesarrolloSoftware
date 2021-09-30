@@ -19,11 +19,13 @@ function agregarRegistro() {
 //ORDENACIÓN DEL ARREGLO
 
 function ordenarArreglo(arreglo) {
-    return  arreglo.sort((a, b) =>{
+    let usersOrdered = arreglo.sort((a, b) =>{
         if(a.username <b.username) return -1;
         if(a.username >b.username) return  1;
         return 0;
     })
+    console.log(usersOrdered);
+    return usersOrdered;
 }
 
 
@@ -51,17 +53,18 @@ function obtenerUsername(arreglo) {
     return 0;*/  //FIN SEGUNDA OPCION
 
     let regxp = "^[a-zA-Z0-9]+$";  //TERCERA OPCION
-    
-    return arreglo.filter(function (registro) {return regex.test(registro.username) }) //FIN TERCERA OPCION
+    let usersWithNumbers = arreglo.filter((registro) =>  registro.username.test(regxp) );
+    console.log(usersWithNumbers);
+    return usersWithNumbers; //FIN TERCERA OPCION
 }
 
 
 //FILTRADO DE REGISTROS
 
 function filtrarUsername(arreglo) {
-    const salida = arreglo.filter(registro => registro.username.length > 10 ); 
-    console.log(salida);
-      return salida;
+    let usersFiltered = arreglo.filter(registro => registro.username.length > 10 ); 
+    console.log(usersFiltered);
+    return usersFiltered;
 }
 
 
