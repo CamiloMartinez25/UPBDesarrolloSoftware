@@ -1,25 +1,25 @@
 //ARREGLO DE OBJETOS
-
-var arreglo = [];
+var registros = [];
 
 
 function agregarRegistro() {
-    
+    const formElements = document.getElementById('form-registro').elements
+
     const nuevoRegistro = {
-        username: document.getElementById('username').value,
-        contrasena: document.getElementById('contrasena').value,
-        preguntaSeguridad: document.getElementById('preguntas-seguridad').value,
-        respuestaSeguridad: document.getElementById('respuesta-seguridad').value
+        username: formElements[0].value ,
+        contrasena: formElements[1].value,
+        preguntaSeguridad: formElements[2].value,
+        respuestaSeguridad: formElements[3].value
     }
-    console.log(nuevoRegistro);
-    arreglo.push(nuevoRegistro);
+    console.log(registros)
+    registros.push(nuevoRegistro);
 }
 
 
 //ORDENACIÓN DEL ARREGLO
 
-function ordenarArreglo(arreglo) {
-    let usersOrdered = arreglo.sort((a, b) =>{
+function ordenarArreglo(registros) {
+    let usersOrdered = registros.sort((a, b) =>{
         if(a.username <b.username) return -1;
         if(a.username >b.username) return  1;
         return 0;
@@ -33,10 +33,10 @@ function ordenarArreglo(arreglo) {
 
 //let numbers = "0123456789"; //PRIMERA OPCION
 
-function obtenerUsername(arreglo) {
-    /*for (var i = 0; i < arreglo.length; i++) {
-        if(numbers.indexOf(arreglo.username.charAt(i),0)!=-1){
-            console.log(arreglo.username[i]);
+function obtenerUsername(registros) {
+    /*for (var i = 0; i < registros.length; i++) {
+        if(numbers.indexOf(registros.username.charAt(i),0)!=-1){
+            console.log(registros.username[i]);
             return 1;
         }
     }
@@ -44,16 +44,16 @@ function obtenerUsername(arreglo) {
     
     /*let regxp = "^[a-zA-Z0-9]+$"; //SEGUNDA OPCION
     
-    for (var i = 0; i < arreglo.length; i++) {
-        if(regxp.test(arreglo[i].username)){
-            console.log(arreglo[i].username);
+    for (var i = 0; i < registros.length; i++) {
+        if(regxp.test(registros[i].username)){
+            console.log(registros[i].username);
             return 1;
         }
     }
     return 0;*/  //FIN SEGUNDA OPCION
 
-    let regxp = "^[a-zA-Z0-9]+$";  //TERCERA OPCION
-    let usersWithNumbers = arreglo.filter((registro) =>  registro.username.test(regxp) );
+    let regxp = /^[A-Za-z0-9]+$/g;  //TERCERA OPCION
+    let usersWithNumbers = registros.filter((registro) =>  regxp.test(registro.username) );
     console.log(usersWithNumbers);
     return usersWithNumbers; //FIN TERCERA OPCION
 }
@@ -61,8 +61,8 @@ function obtenerUsername(arreglo) {
 
 //FILTRADO DE REGISTROS
 
-function filtrarUsername(arreglo) {
-    let usersFiltered = arreglo.filter(registro => registro.username.length > 10 ); 
+function filtrarUsername(registros) {
+    let usersFiltered = registros.filter(registro => registro.username.length > 10 ); 
     console.log(usersFiltered);
     return usersFiltered;
 }
@@ -71,6 +71,7 @@ function filtrarUsername(arreglo) {
 //EXPORTACIÓN DE FUNCIONES
 
 module.exports = {
+    registros,
     agregarRegistro,
     ordenarArreglo,
     obtenerUsername,
