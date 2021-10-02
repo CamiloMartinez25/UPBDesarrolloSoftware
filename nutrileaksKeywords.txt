@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 // Top Producto:
+=======
+// Top Productos:
+>>>>>>> 717f2430bb882252936db75004d496822d25cf9c
 frutas
 511
 verduras
@@ -60,6 +64,7 @@ mantequilla
 azucar
 7
 
+<<<<<<< HEAD
 // Top Fruta:
 coco
 66
@@ -137,6 +142,8 @@ azul
 5
 
 
+=======
+>>>>>>> 717f2430bb882252936db75004d496822d25cf9c
 // Top 500 Keywords para food,nutrición,comidas,health,salud,alimentos,valor nutricional,nutritional value,food components,nutrition 
 // ordenados de mayor a menor # de búsquedas en Google
 food
