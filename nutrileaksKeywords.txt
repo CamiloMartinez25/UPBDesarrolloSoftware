@@ -1,4 +1,4 @@
-Top Productos:
+// Top Producto:
 frutas
 511
 verduras
@@ -60,8 +60,85 @@ mantequilla
 azucar
 7
 
-Top 500 Keywords para food,nutrición,comidas,health,salud,alimentos,valor nutricional,nutritional value,food components,nutrition 
+// Top Fruta:
+coco
+66
+banana
+51
+manzana
+32
+aguacate
+28
+fresa
+19
+mango
+17
+papaya
+17
+sandia
+14
+limon
+13
+kiwi
+12
+arandanos
+11
+moras
+11
+pera
+11
+uva
+10
+guayaba
+9
+melon
+9
+durazno
+6
+cereza
+5
+ciruela
+5
+frambuesa
+5
 
+// Top Nutritivo
+proteina
+144
+grasa
+40
+valor energetico
+27
+carbohidratos
+26
+agua
+19
+fibra
+16
+sal
+12
+
+// Top Colores:
+naranja
+31
+blanco
+30
+verde
+28
+rojo
+15
+mandarina
+13
+negro
+10
+amarillo
+7
+azul
+5
+
+
+// Top 500 Keywords para food,nutrición,comidas,health,salud,alimentos,valor nutricional,nutritional value,food components,nutrition 
+// ordenados de mayor a menor # de búsquedas en Google
 food
 nutrición
 comidas
