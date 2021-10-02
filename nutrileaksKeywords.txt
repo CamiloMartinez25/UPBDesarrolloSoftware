@@ -1,4 +1,4 @@
-Top Productos:
+// Top Productos:
 frutas
 511
 verduras
@@ -60,8 +60,8 @@ mantequilla
 azucar
 7
 
-Top 500 Keywords para food,nutrición,comidas,health,salud,alimentos,valor nutricional,nutritional value,food components,nutrition 
-
+// Top 500 Keywords para food,nutrición,comidas,health,salud,alimentos,valor nutricional,nutritional value,food components,nutrition 
+// ordenados de mayor a menor # de búsquedas en Google
 food
 nutrición
 comidas
