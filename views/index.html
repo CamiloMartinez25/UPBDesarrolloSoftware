@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../stylesheets/estilos.css">
+    <title>NutriLeaks</title>
+</head>
+<body>
+    <div class="logo-container">
+        <div class="logotext-container">
+            <h1>NutriLeaks</h1>
+            <p>Conoce toda la información nutricional de tu comida!</p>
+        </div>
+    </div>
+    <div class="register-container">
+        <h2 class="register-title">Datos de registro</h2>
+        <hr>
+        <h5 class="register-subtitle">Datos por usuario</h5>
+        <div class="form-container">
+            <!-- Aqui debe ir el formulario -->
+            <form class="form" id="form-registro" method="POST">
+                <div class="input-container">
+                  <input class="input" id="username" name="username" placeholder="Nombre de usuario">
+                  <label class="input-label" for="username" >Username</label>
+                  <span class="input-error" id="usernameError"></span>
+                </div>
+                <div class="input-container">
+                  <input class="input" type="password" name="contrasena" id="contrasena" placeholder="Contraseña">
+                  <label class="input-label" for="contrasena">Password</label>
+                  <span class="input-error" id="contrasenaError"></span>
+                </div>
+                <div class="input-container">
+                  <select class="input" name="preguntas-seguridad" id="preguntas-seguridad" placeholder="Escoja una pregunta...">
+                      <option selected disabled value="undefined">Escoge una pregunta de seguridad</option>
+                      <option value="1">¿Cuál es el apellido de soltera de tu mamá?</option>
+                      <option value="2">¿En qué año se casaron tus padres?</option>
+                      <option value="3">¿Cuál fue tu primer número de teléfono?</option>
+                      <option value="4">¿Cuál era el nombre de tu primera profesora?</option>
+                      <option value="5">¿Cuál era el modelo de tu primer carro?</option>
+                  </select>
+                  <label class="input-label hidden" for="preguntas-seguridad" >Pregunta</label>
+                  <span class="input-error" id="preguntaSeguridadError"></span>
+                </div>
+                <div class="input-container">
+                  <input class="input" id="respuesta-seguridad" name="respuesta-seguridad" placeholder="Escribe una respuesta corta...">
+                  <label class="input-label hidden" for="respuesta-seguridad" >Escribe tu respuesta</label>
+                  <span class="input-error" id="respuestaSeguridadError"></span>
+                </div>
+
+                <!-- Aqui debe ir el boton -->
+                <button class="button" type="submit" id="btn-registrar"  >Registrar</button>
+                <!-- Aqui debe ir el link de redirección -->
+                <a class="link-login" href="login" id="enlace-login">Iniciar sesión*</a>
+            </form>
+        </div>
+        <div class="user-success" id="user-register" >
+          ¡Usuario registrado con exito!
+        </div>
+    </div>
+    <script type="module" src="./javascripts/index.mjs" ></script>
+</body>
+</html>
