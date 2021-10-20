@@ -8,6 +8,20 @@ exports.getUsers = (req, res) => {
     });
 }
 
+exports.getUser = (req, res) => {
+    const credentials = req.body;
+    
+    db.query(`SELECT * FROM users WHERE username = '${credentials.username}' AND password = '${credentials.contrasena}'`, (err, results) => {
+        if (err) throw err;
+        if (JSON.parse(JSON.stringify(results)).length) {
+            res.sendStatus(200).send(JSON.parse(JSON.stringify(results)).length);
+        } else {
+            res.status(404).send({"message": "Invalid credentials"});
+        }
+        
+    })
+}
+
 exports.createUser = (req, res) => {
     const { username, contrasena, preguntaSeguridad, respuestaSeguridad }= req.body;
     

@@ -184,6 +184,47 @@ hr {
     display: none;
 }
 
+.captcha {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.captcha > div:first-child {
+    font-size: 12px;
+    padding: 5px 9px 2px;
+    text-align: center;
+    border: 0;
+    border-radius: 4px;
+    box-shadow: 0 0 2px lightgray;
+    margin-right: 5px;
+    position: relative;
+    top: -0.5rem;
+    font-weight: bold;
+}
+
+.login-fail {
+    background-color: #f5a8a8;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: red;
+    border-radius: 5px;
+    display: none;
+    font-size: 12px;
+    text-align: center;
+}
+
+.login-success {
+    background-color: lightgreen;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: green;
+    border-radius: 5px;
+    display: none;
+    font-size: 12px;
+    text-align: center;
+}
+
 @media (max-width: 324px) {
     .logo-container {
         width: 100%;
@@ -218,6 +259,11 @@ hr {
     .logotext-container {
         position: absolute;
         bottom: 0;
+    }
+    
+    .captcha {
+        flex-direction: column;
+        align-items: center;
     }
 }
 
@@ -256,6 +302,11 @@ hr {
     .logotext-container {
         position: absolute;
         bottom: 0;
+    }
+    
+    .captcha {
+        flex-direction: column;
+        align-items: center;
     }
 }
 

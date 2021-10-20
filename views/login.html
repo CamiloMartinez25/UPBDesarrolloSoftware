@@ -29,6 +29,17 @@
                     <input class="input" type="password" name="contrasena" id="contrasena" placeholder="Contraseña">
                     <label class="input-label" for="contrasena">Password</label>
                   </div>
+                  
+                  <div class="input-container" >
+                    <input class="input" type="text" name="captcha" id="captcha" placeholder="¿Qué resultado da el cuarto de tres veces 12000?">
+                    <label class="input-label hidden" for="captcha">CAPTCHA</label>
+                  </div>
+                  <div class="login-success">
+                      Bienvenido
+                  </div>
+                  <div class="login-fail" >
+                      Usuario y/o contraseñas incorrectas
+                  </div>
                   <input class="button" type="submit" name="btn-submit-form" id="btn-submit-form" value="Login">
             </form>
             
@@ -36,5 +47,7 @@
         </div>
 
     </div>
+    <script type="module" src="./javascripts/login.mjs" ></script>
+
 </body>
 </html>

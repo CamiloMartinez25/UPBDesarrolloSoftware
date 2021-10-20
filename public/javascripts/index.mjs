@@ -1,5 +1,5 @@
 import {checkContrasena, checkPreguntaSeg, checkRespuestaSeg, checkUsername, validateForm} from './form.mjs'
-import { agregarRegistro } from './registro.mjs'
+import { agregarRegistro } from './registro.mjs';
 
 const userNameInput = document.getElementById('username');
 const contrasenaInput = document.getElementById('contrasena');
@@ -35,6 +35,7 @@ registerForm.addEventListener('submit', async ($event) => {
         }, 1000);
     }
 })
+
 
 
 

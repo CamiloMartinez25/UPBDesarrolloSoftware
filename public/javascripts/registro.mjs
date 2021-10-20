@@ -1,6 +1,6 @@
 //ARREGLO DE OBJETOS
 var registros = [];
-import { post } from '../ajax/postRequest.mjs';
+import { post } from '../CRUD/postRequest.mjs';
 
 export async function agregarRegistro() {
     const formElements = document.getElementById('form-registro').elements;
